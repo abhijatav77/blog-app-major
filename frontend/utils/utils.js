@@ -1,1 +1,1 @@
-export const BACKEND_URL = 'http://localhost:2000/api'
+export const BACKEND_URL = 'https://blog-app-major-backend.onrender.com/api'
