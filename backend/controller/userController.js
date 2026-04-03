@@ -79,10 +79,6 @@ export const signup = async (req, res) => {
 
         const hashPassword = await bcrypt.hash(password, 10)
 
-
-
-
-
         const newUser = await User.create({
             name,
             email,
@@ -142,7 +138,7 @@ export const login = async (req, res) => {
         res.cookie('token', token, {
             httpOnly: true,
             secure: true,
-            sameSite: "Strict"
+            sameSite: "none"
         })
 
         return res.status(200).json({
