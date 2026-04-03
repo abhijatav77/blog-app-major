@@ -13,6 +13,6 @@ const nodeSchema = mongoose.Schema({
         type: String,
         required: true
     }
-}, {Timestamp: true})
+}, {timestamp: true})
 
 export const Node = mongoose.model('Node', nodeSchema)
